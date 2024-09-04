@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://xuedao.xyz
+
+# Sitemaps
+Sitemap: https://xuedao.xyz/sitemap.xml

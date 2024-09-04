@@ -91,12 +91,11 @@ export function Logo() {
           }}
         >
           <Image
-            src="/puzzle.png"
+            src="/puzzle.webp"
             width={1000}
             height={800}
             alt="puzzle"
             priority
-            className="w-full h-full"
           />
         </motion.div>
       </motion.div>
