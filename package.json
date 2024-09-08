@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "prestart": "kill-port 3000",
     "start": "next start",
     "lint": "next lint",
     "postbuild": "next-sitemap"

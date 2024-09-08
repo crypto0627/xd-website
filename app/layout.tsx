@@ -11,24 +11,10 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "xuedao",
+  title: "Xuedao - office website",
   description: "XueDAO, a student-run DAO for students.",
   icons: {
     icon: "/favicon-32x32.png",
-  },
-  openGraph: {
-    title: "XueDAO",
-    description: "XueDAO is a student-run DAO for students.",
-    url: "https://www.xuedao.xyz",
-    type: "website",
-    images: [
-      {
-        url: "/favicon-32x32.png",
-        width: 1200,
-        height: 630,
-        alt: "XueDAO logo",
-      },
-    ],
   }
 };
 
