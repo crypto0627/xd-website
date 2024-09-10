@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
-import Head from "next/head";
-import { GoogleAnalytics } from '@next/third-parties/google'
+import Script from "next/script";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -11,11 +10,18 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Xuedao - office website",
+  title: "Xuedao - Office Website",
   description: "XueDAO, a student-run DAO for students.",
   icons: {
     icon: "/favicon-32x32.png",
-  }
+  },
+  viewport: "width=device-width, initial-scale=1",
+  keywords: ["XueDAO", "xuedao", "Web3", "student DAO", "blockchain", "decentralized", "students"],
+  authors: [{ name: "Jake Kuo" }],
+  robots: "all",
+  alternates: {
+    canonical: "https://www.xuedao.xyz",
+  },
 };
 
 export default function RootLayout({
@@ -25,17 +31,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-        <meta name="robots" content="all" />
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href="https://www.xuedao.xyz" />
-        <meta name="author" content="Jake Kuo" />
-        <meta name="keywords" content="XueDAO, xuedao, Web3, student DAO, blockchain, decentralized, students" />
-        {/* Google Analytics GTag Script */}
-        <GoogleAnalytics gaId="G-1CPRXW8L1Z" />
-      </Head>
-      <body className={roboto.className}>{children}</body>
+      <body className={roboto.className}>
+        {children}
+
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-1CPRXW8L1Z"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-1CPRXW8L1Z');
+          `}
+        </Script>
+      </body>
     </html>
   );
 }

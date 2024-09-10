@@ -1,9 +1,5 @@
-# *
 User-agent: *
+Disallow: /_next/static/
 Allow: /
 
-# Host
-Host: https://xuedao.xyz
-
-# Sitemaps
 Sitemap: https://xuedao.xyz/sitemap.xml
