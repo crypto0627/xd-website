@@ -10,12 +10,12 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Xuedao - Office Website",
+  title: "XueDAO",
   description: "XueDAO, a student-run DAO for students.",
   icons: {
     icon: "/favicon-32x32.png",
   },
-  keywords: ["XueDAO", "xuedao", "Web3", "student DAO", "blockchain", "decentralized", "students"],
+  keywords: ["XueDAO", "xuedao", "xue dao", "xue", "dao", "學到", "學道", "Web3", "student DAO", "blockchain", "decentralized", "students"],
   authors: [{ name: "Jake Kuo" }],
   robots: "all",
   alternates: {
