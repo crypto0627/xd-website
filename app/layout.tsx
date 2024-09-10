@@ -15,7 +15,6 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon-32x32.png",
   },
-  viewport: "width=device-width, initial-scale=1",
   keywords: ["XueDAO", "xuedao", "Web3", "student DAO", "blockchain", "decentralized", "students"],
   authors: [{ name: "Jake Kuo" }],
   robots: "all",

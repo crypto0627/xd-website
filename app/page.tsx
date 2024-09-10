@@ -34,6 +34,7 @@ export default function Component() {
         <p className="text-xs text-gray-500 dark:text-gray-400">
           © 2024 XueDAO organization. All rights reserved.
         </p>
+        <a href="https://www.xuedao.xyz/sitemap.xml">Sitemap</a>
       </footer>
     </div>
   );
